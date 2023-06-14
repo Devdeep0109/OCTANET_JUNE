@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CollageDetail</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!------------------------      HEADER     ----------------------------------------------->
+    <section class="header">
+        <!-- nav bar -->
+        <nav>
+            <a href="index.html"><img src="images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <img src="images/close-icon.png" alt="" class="icon icon1" onclick="hideMenu()">
+                <ul>
+                    <li><a href="">HOME</a></li>
+                    <li><a href="">ABOUT </a></li>
+                    <li><a href="">COURSE</a></li>
+                    <li><a href="">BLOG</a></li> 
+                   <li><a href="">CONTACT</a></li> 
+                </ul>
+            </div>
+            <img src="images/menu-icon.png" alt="" class="icon icon2" onclick="showMenu()">
+
+        </nav>
+
+        <!----- text section ----->
+        <div class="text-box">
+            <h1> World's biggest university</h1>
+            <p>Lorem ipsum dolor sit amet, <br>
+                consectetur adipisicing elit. Assumenda, deserunt.</p>
+            <a href="" class="text-sec-btn">Visit Us To Know More</a>
+        </div>
+    </section>
+    <!-----------------------      COURSES    --------------------------------->
+    <section class="course">
+        <h1>Courses We Offer</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem, eligendi?</p>
+        <div class="row">
+            <div class="course-col">
+                <h3>Intermediate</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta alias libero necessitatibus ex aspernatur in?</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Degree</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta alias libero necessitatibus ex aspernatur in?</p>
+            </div>
+
+            <div class="course-col">
+                <h3>Post Graduation</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta alias libero necessitatibus ex aspernatur in?</p>
+            </div>
+        </div>
+
+    </section>
+
+    <!-----------------------------  Campus Section   -------------------------------------->
+    <section class="campus">
+
+        <h1>Our campus</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime, architecto!</p>
+
+        <div class="row">
+            <div class="campus-col">
+                <img src="images/london.png" alt="">
+                <div class="layer">
+                   <h3> LONDON</h3>
+                </div>
+            </div>
+            <div class="campus-col">
+                <img src="images/newyork.png" alt="">
+                <div class="layer">
+                    <h3>NEW YORK</h3>
+                </div>
+                
+            </div>
+            <div class="campus-col">
+                <img src="images/washington.png" alt="">
+                <div class="layer">
+                   <h3> WISHINGTON</h3>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+ 
+
+
+    <!-------------------------- JAVASCRIPT    ---------------------------------->
+    <script>
+        var navLinks = document.getElementById("navLinks");
+
+        function showMenu(){
+            navLinks.style.right = "0";
+        }
+        function hideMenu(){
+            navLinks.style.right = "-200px";
+        }
+    </script>
+</body>
+</html>
